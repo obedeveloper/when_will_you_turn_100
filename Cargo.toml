@@ -1,0 +1,6 @@
+[package]
+name = "when_will_you_turn_100"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
