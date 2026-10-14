@@ -1,3 +1,4 @@
+use chrono::prelude::*;
 use std::io;
 
 fn main() {
@@ -11,7 +12,7 @@ fn main() {
         .expect("Failed to get your name!");
 
     let name = name.trim();
-    let current_year = 2026;
+    let current_year: u32 = Utc::now().year().to_string().parse().expect("");
     let result = current_year + (100 - get_valid_age());
 
     println!("\n{name}, you will turn 100 in {result}!");
